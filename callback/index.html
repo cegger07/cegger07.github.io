@@ -1,0 +1,6 @@
+<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CordKlima Anmeldung</title>
+<body style="font-family:sans-serif;max-width:40em;margin:2em auto;padding:0 1em">
+<h2>Tesla-Anmeldung fertig</h2><p>Kopiere den Code unten und schick ihn an Tesla Ready.</p>
+<textarea id="c" style="width:100%;height:8em" readonly></textarea><p><button onclick="navigator.clipboard.writeText(document.getElementById('c').value)">Kopieren</button></p>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')?('code='+p.get('code')+'&state='+(p.get('state')||'')):('Fehler: '+(p.get('error')||'kein Code')+' '+(p.get('error_description')||''));</script>
+</body></html>
